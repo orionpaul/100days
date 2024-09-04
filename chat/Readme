@@ -1,0 +1,16 @@
+# install node js
+
+- use npm to create nodejs app {
+    #command
+    npm init -y
+}
+
+- How to create a webserver using node http
+
+- how to configure your node application in package.json so that you can run node commands(the app)
+
+#http methods
+GET = fetch data from server
+POST = send data to server
+PUT /PATCH = Edit data and update to server
+DELETE METHOD = delete data

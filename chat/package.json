@@ -1,0 +1,17 @@
+{
+  "name": "chatapi",
+  "version": "1.0.0",
+  "description": "one on one messaging & group messaging api for a flutter app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch server.js "
+  },
+  "author": "Fadzai Rose",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
