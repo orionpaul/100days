@@ -1,15 +1,19 @@
-// import { createServer } from 'node:http'
-// const server = createServer()
+import express from "express"; // import express framework
 
-// server.send('/books',  (req, res) => {
-//     const books = [
-//         {id: 1, name: "Harry Potter"},
-//         {id: 2, name: "Game of Thrones"}
-//     ]
-//     res.writeHead(200, {'Content-Type': 'application/json'})
-//     res.send(books)
-// })
+const app = express()//express app instance
+const port = 9090 //server port
 
-// server.listen(2024, () => {
-//     console.log(`http://localhost:${2024}`)
-// })
+app.get('/', function(req, res) {
+   const fruits = ["Apple", "Banana", "Orange", "pine"]
+   res.send(fruits)
+})
+
+app.use(express.json())
+
+app.post('/', function(req, res) {
+    const {name, age} = req.body;
+    const result = `Hello ${name}, you are ${age} years old`;
+    res.send(result);
+    console.log(result);
+})
+app.listen(port, () => console.log(`our server is now running on: ${port}`))

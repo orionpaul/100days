@@ -17,7 +17,7 @@
 
  //Number
  let age = 25; //Interger
- let temperature = 98.6; //Floating point number
+ let temperature = 98.6; //double point number
  let price = 19.99; //Floating point number
  let quantity = Infinity; //Special number
  let notANumber = NaN // Not a Number
@@ -30,7 +30,9 @@
  let name = "John Doe"; // Double quotes
  let greetings = 'Hello'; // Single qoutes
  let message = `Hello, ${name}!`; //Template literals with interpolation
+ let example =  greetings +  `that everything you need to know plus ${message}`
 
+ 
  //Boolean
  let isActive = true;
  let hasPermission = false;
